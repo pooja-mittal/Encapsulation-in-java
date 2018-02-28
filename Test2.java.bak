@@ -1,0 +1,32 @@
+abstract class Employee
+{
+	private String name;
+	
+	void setName(String name) {
+		this.name=name;
+	}
+
+	String getname() {
+		return name;
+	}
+}
+
+class Person extends Employee {
+	private int code;
+	void setCode(int c) {
+		code=c;
+	}
+
+	int getCode() {
+		return code;
+	}
+}
+
+class Test2
+{
+	public static void main(String[] args) {
+		Employee e=new Person();
+		e.setName("pooja");
+		e.getname();
+	}
+}
